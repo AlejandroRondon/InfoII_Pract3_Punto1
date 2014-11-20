@@ -13,7 +13,7 @@ original;mientras que el operador *= permite realizar la misma operacion, pero n
 actua sobre el mismo objeto, es decir, en este caso se modifica el objeto original.
 */
 int main( void ){
-/*Version0*/
+/*Version2*/
 Mat2x2 myMat2x2_A(1,2,3,4);
 Mat2x2 myMat2x2_B(5);
 Mat2x2 myMat2x2_C(6,7,8,9);
