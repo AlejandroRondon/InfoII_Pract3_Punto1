@@ -65,8 +65,11 @@ bool Mat2x2::operator ==(Mat2x2 argMat2x2){
     return true;
 
 }
-Mat2x2 Mat2x2::operator *(Mat2x2 argMat2x2){
-    return argMat2x2;
+Mat2x2 Mat2x2::operator *(Mat2x2 matrix){
+    float a=matrix.mat2x2[0][0]*mat2x2[0][0] + matrix.mat2x2[0][1]*mat2x2[1][0];float b=matrix.mat2x2[0][0]*mat2x2[0][1] + matrix.mat2x2[0][1]*mat2x2[1][1];
+    float c=matrix.mat2x2[1][0]*mat2x2[0][0] + matrix.mat2x2[1][1]*mat2x2[1][0];float d=matrix.mat2x2[1][0]*mat2x2[0][1] + matrix.mat2x2[1][1]*mat2x2[1][1];
+
+    return *(new Mat2x2(a,b,c,d));
 }
 
 Mat2x2 Mat2x2::operator *(float A){
@@ -121,3 +124,8 @@ ostream& operator <<(ostream &o,Mat2x2 myMat2x2)
     o << "\n|\t" << myMat2x2.mat2x2[0][0] << "\t\t" << myMat2x2.mat2x2[0][1]  << "\t|\n" << "|\t" << myMat2x2.mat2x2[1][0] << "\t\t" << myMat2x2.mat2x2[1][1]  << "\t|\n";
     return o;
 }
+
+Mat2x2 operator* (float A,Mat2x2 mat2x2){
+    return *(new Mat2x2((mat2x2.mat2x2[0][0]*A),(mat2x2.mat2x2[0][1]*A),(mat2x2.mat2x2[1][0]*A),(mat2x2.mat2x2[1][1]*A)));
+}
+

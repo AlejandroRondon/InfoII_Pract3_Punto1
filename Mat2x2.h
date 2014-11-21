@@ -21,6 +21,7 @@ class Mat2x2
     Mat2x2 operator *(float);   //with Real
     Mat2x2 operator /(float);  //with Real
     friend ostream& operator <<(ostream &o,Mat2x2 myMat2x2);    //friend: With this WORD this method will can to access to the private attributes
+    friend Mat2x2 operator* (float ,Mat2x2);
     void operator /=(float);  //with Real
     void operator *=(float);  //with Real
 

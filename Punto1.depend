@@ -1,12 +1,12 @@
 # depslib dependency file v1.0
-1415923856 source:d:\dropbox\udea(dropbox)\informatica ii\villa 2014\lab(lennis)\informaticaii\practica3\punto1\main.cpp
+1416529527 source:d:\dropbox\udea(dropbox)\informatica ii\villa 2014\lab(lennis)\informaticaii\practica3\punto1\main.cpp
 	<cstdio>
 	<iostream>
 	"Mat2x2.h"
 
-1415919370 d:\dropbox\udea(dropbox)\informatica ii\villa 2014\lab(lennis)\informaticaii\practica3\punto1\mat2x2.h
+1416529368 d:\dropbox\udea(dropbox)\informatica ii\villa 2014\lab(lennis)\informaticaii\practica3\punto1\mat2x2.h
 	<iostream>
 
-1415919456 source:d:\dropbox\udea(dropbox)\informatica ii\villa 2014\lab(lennis)\informaticaii\practica3\punto1\mat2x2.cpp
+1416529500 source:d:\dropbox\udea(dropbox)\informatica ii\villa 2014\lab(lennis)\informaticaii\practica3\punto1\mat2x2.cpp
 	"Mat2x2.h"
 
